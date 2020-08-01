@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 16px;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.container {
+    width: 600px;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "subscribe why-us";
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+li {
+    list-style: none;
+    font-size: 15px;
+}
+
+section {
+    padding: 30px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 15px;
+}
+
+.header {
+    grid-area: header;
+    background-color: white;
+}
+
+.subscribe {
+    grid-area: subscribe;
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+}
+
+.why-us {
+    grid-area: why-us;
+    background-color: hsl(179, 47%, 52%);
+    color: white;
+}
+
+/* Header */
+
+.cyan-text {
+    margin-bottom: 25px;
+    color: hsl(179, 25%, 50%);
+    font-weight: 700;
+}
+
+.yellow-text {
+    margin-bottom: 20px;
+    color: hsl(71, 73%, 54%);
+}
+
+.light-black {
+    color: hsl(0, 0%, 56%);
+    margin-bottom: 10px;
+}
+
+/* Subscribe */
+
+.subscribe h3 {
+    margin-bottom: 20px;
+}
+
+.subscribe h1 {
+    margin-bottom: 10px;
+}
+
+.subscribe span {
+    font-size: 16px;
+    color: hsl(180, 2%, 90%);
+    margin-top: 0px;
+}
+
+.subscribe button {
+    margin-top: 25px;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    box-shadow: 0px 5px 10px 5px rgb(0, 0, 0, 0.15);
+}
+
+
+/* Why-Us */
+.why-us h3 {
+    margin-bottom: 20px;
+}
+
+.why-us ul li {
+    margin: 3px 0px 3px;
+}
+
+@media (max-width:625px) {
+    .container {
+        grid-template-areas:
+            "header header"
+            "subscribe subscribe"
+            " why-us why-us";
+        margin: 20px;
+    }
+
+
+
+}
