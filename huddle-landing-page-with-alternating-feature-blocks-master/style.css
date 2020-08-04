@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,600&family=Poppins:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    --warna-pink: hsl(322, 100%, 66%);
+    --warna-very-pale-cyan: hsl(322, 100%, 66%);
+    --warna-very-dark-cyan: hsl(192, 100%, 9%);
+    --warna-grayish-blue: hsl(208, 11%, 55%);
+}
+
+img {
+    max-width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.box>div {
+    flex: 1 1 300px;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.btn {
+    padding: 20px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.box {
+    max-width: 1200px;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 35px 15px 35px 65px;
+    border-radius: 10px;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.flex h2 {
+    margin-bottom: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+/* Section - Header */
+header {
+    min-height: 100vh;
+    background-color: hsl(193, 100%, 96%);
+    background-image: url(images/bg-hero-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 35px 70px;
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+}
+
+nav {
+    min-height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    flex: 1 1 400px;
+}
+
+.button-navbar {
+    flex: 1 1 400px;
+    justify-content: flex-end;
+}
+
+.btn-nav {
+    width: 220px;
+    height: 50px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: hsl(192, 100%, 9%);
+}
+
+/* Section - Hero */
+.hero {
+    min-height: 90vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hero-text,
+.hero-img {
+    flex: 1 1 400px;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.hero-text h1 span {
+    margin-top: 15px;
+}
+
+.hero-text p {
+    margin-top: 20px;
+    width: 80%;
+    line-height: 1.5;
+}
+
+.button-hero {
+    margin-top: 20px;
+}
+
+.btn-hero {
+    width: 40%;
+    background-color: var(--warna-pink);
+    color: white;
+    font-size: 18px;
+}
+
+/* Main */
+main {
+    padding: 80px 40px 134px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Section - Grow */
+.grow {
+    padding-bottom: 65px;
+    justify-content: center;
+    align-items: center;
+}
+
+.grow-img img {
+    width: 75%;
+    margin-left: 80px;
+}
+
+/* Section - Flow */
+.flow {
+    padding-bottom: 65px;
+    justify-content: center;
+    align-items: center;
+}
+
+.flow-img img {
+    width: 75%;
+}
+
+/* Section - Users */
+.users {
+    padding-bottom: 65px;
+    justify-content: center;
+    align-items: center;
+}
+
+.users img {
+    width: 75%;
+    margin-left: 80px;
+}
+
+/* Card */
+.card {
+    max-width: 90%;
+    margin: 0 auto;
+    /* height: 220px; */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -5%;
+    z-index: 99;
+    background-color: #fff;
+    padding: 60px 100px 40px;
+}
+
+.btn-card {
+    width: 300px;
+    height: 55px;
+    background-color: var(--warna-pink);
+    color: #fff;
+    font-size: 18px;
+}
+
+.btn-card h2 {
+    margin-bottom: 20px;
+}
+
+/* Card */
+
+/* Footer */
+footer {
+    min-height: 470px;
+    background-color: var(--warna-very-dark-cyan);
+    padding: 205px 74px 55px;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    /* overflow: hidden; */
+}
+
+.img-logo {
+    display: flex;
+    margin-right: auto;
+    color: white;
+}
+
+footer .atas {
+    margin: 20px auto;
+}
+
+footer ul li {
+    margin-bottom: 20px;
+}
+
+footer .satu li {
+    display: flex;
+    align-items: flex-start;
+}
+
+footer .satu img {
+    margin-top: 4px;
+    margin-right: 10px;
+}
+
+footer .satu li:nth-child(1) img {
+    margin-right: 17px;
+}
+
+footer .atas .satu {
+    flex: 2;
+    width: 35%;
+}
+
+footer .dua,
+footer .tiga,
+footer .empat {
+    flex: 1;
+}
+
+footer .atas {
+    justify-content: space-between;
+}
+
+footer .atas ul {
+    margin-right: 50px;
+}
+
+footer .empat i {
+    color: white;
+    font-size: 20px;
+}
+
+footer .empat li {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+footer .bawah {
+    justify-content: flex-end;
+}
+
+@media (max-width:767px) {
+    header {
+        padding: 35px 40px;
+    }
+
+    .hero {
+        flex-wrap: wrap;
+    }
+
+    .hero-text {
+        text-align: center;
+        margin: 50px auto;
+    }
+
+    .hero-text p {
+        margin: 20px auto;
+    }
+
+    .hero-text .btn-hero {
+        margin: 0 auto;
+    }
+
+    .box {
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 35px;
+        flex-direction: column-reverse;
+    }
+
+    .box div:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 200px;
+    }
+
+    .box:not(.flex-reverse) img {
+        margin: auto;
+    }
+
+    .box p {
+        margin: 20px auto;
+    }
+
+    .btn-hero {
+        width: 50%;
+    }
+
+    .card {
+        /* padding: 60px 100px 40px; */
+        padding: 35px 25px;
+        left: 0;
+        right: 0;
+    }
+
+    .card h2 {
+        text-align: center;
+    }
+
+    footer {
+        padding: 205px 40px 55px;
+    }
+
+    footer .atas {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    footer .atas .satu,
+    footer .atas .dua,
+    footer .atas .tiga,
+    footer .atas .empat {
+        width: 100%;
+    }
+
+    footer .atas .satu {
+        margin: 0 0 50px;
+    }
+
+    footer .atas .tiga {
+        margin-bottom: 30px;
+    }
+
+    footer .atas .empat {
+        justify-content: center;
+    }
+
+
+    footer .bawah {
+        margin: 0 auto;
+    }
+}
