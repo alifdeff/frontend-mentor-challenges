@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+}
+
+section {
+    padding: 40px;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+button {
+    border-radius: 3px;
+}
+
+input {
+    border: 1px solid hsl(238, 22%, 44%);
+    font-size: 16px;
+    padding: 13px 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+input::placeholder {
+    color: hsl(0, 0%, 75%);
+}
+
+button {
+    border: none;
+    color: white;
+    padding: 15px 34px;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+    background-color: hsl(224, 93%, 58%);
+}
+
+.flex {
+    display: flex;
+}
+
+.flex>div {
+    flex: 1;
+}
+
+/* -- HEADER -- */
+header {
+    min-height: 100vh;
+    padding: 40px;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav {
+    min-height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: hsl(243, 87%, 12%);
+}
+
+.head {
+    margin: 40px 0px;
+}
+
+.head-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tebal {
+    width: 80%;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.head-text p {
+    max-width: 80%;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.inputan {
+    width: 70%;
+}
+
+.inputan input {
+    flex: 1.5;
+    margin-right: 15px;
+}
+
+.inputan button {
+    flex: .5;
+}
+
+/* -- HEADER -- */
+
+
+/* -- SECTION - STAY PRODUCTIVE -- */
+.stay-productive {
+    min-height: 100vh;
+    background-image: url(images/bg-curve-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 40px;
+}
+
+.stay-productive h1 {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+}
+
+.stay-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stay-text h1 {
+    margin-bottom: 25px;
+}
+
+.stay-text p {
+    margin-bottom: 15px;
+    width: 85%;
+}
+
+.fylo-works {
+    color: hsl(170, 45%, 43%);
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-underline-position: below;
+    font-size: 17px;
+}
+
+.icon-arrow {
+    width: 25px;
+    margin-bottom: -5px;
+    display: inline-block;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 25px;
+    margin-top: 20px;
+    width: 70%;
+}
+
+.card p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1.7;
+}
+
+.quotes {
+    width: 15px;
+    height: 15px;
+    margin-bottom: 10px;
+}
+
+.card-info {
+    display: flex;
+    margin-top: 20px;
+}
+
+.card-info img {
+    border-radius: 50%;
+    height: 50px;
+    margin-right: 10px;
+    width: 50px;
+}
+
+.card-info h4 {
+    font-weight: 700;
+    margin: 0;
+}
+
+/* -- SECTION - STAY PRODUCTIVE -- */
+
+
+/* -- SECTION - GET EARLY -- */
+.get-early {
+    min-height: 40vh;
+    padding: 80px 40px;
+    background-color: hsl(238, 22%, 44%);
+    color: white;
+    align-items: center;
+}
+
+.get-early p {
+    color: hsl(0, 0%, 75%);
+    width: 80%;
+}
+
+.get-early h2 {
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.get-early input {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.get-early input,
+.get-early button {
+    padding: 15px;
+}
+
+.get-early button {
+    width: 35%;
+}
+
+/* -- SECTION - GET EARLY -- */
+
+
+/* -- FOOTER -- */
+footer {
+    min-height: 55vh;
+    background-color: hsl(243, 87%, 12%);
+    padding: 80px 40px 60px;
+    color: white;
+}
+
+.foot-2 {
+    margin-top: 20px;
+}
+
+.foot-2 ul:nth-child(1) {
+    flex: 1.5;
+}
+
+.foot-2>ul:not(.foot-2-one) {
+    flex: 1;
+}
+
+.foot-2 li img {
+    margin-right: 10px;
+}
+
+.foot-2 li {
+    margin-bottom: 15px;
+}
+
+.social-media li a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.social-media li a i {
+    color: white;
+    font-size: 20px;
+}
+
+/* -- FOOTER -- */
+
+@media (max-width:750px) {
+
+    .head,
+    .stay-productive {
+        flex-direction: column;
+    }
+
+    input {
+        padding: 15px;
+    }
+
+    button {
+        padding: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav img {
+        margin-bottom: 20px;
+    }
+
+    .head-text {
+        order: 2;
+        align-items: center;
+    }
+
+    .head-img {
+        order: 1;
+    }
+
+    .head-img,
+    .stay-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .head-text h1,
+    .head-text p {
+        text-align: center;
+    }
+
+    .head-text .inputan {
+        flex-direction: column;
+    }
+
+    .head-text .inputan input,
+    .head-text .inputan button {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .stay-img {
+        order: 1;
+        margin-bottom: 70px;
+    }
+
+    .stay-text {
+        order: 2;
+        display: flex;
+    }
+
+    .stay-text h1 {
+        text-align: center;
+    }
+
+    .fylo-works {
+        margin: 20px auto;
+    }
+
+    .stay-text .card {
+        width: 100%;
+    }
+
+    .stay-text .card p {
+        width: 100%;
+    }
+
+    .get-early {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .get-early p {
+        width: 100%;
+        margin: 20px 0px;
+    }
+
+    .get-early-input input,
+    .get-early-input button {
+        width: 100%;
+    }
+
+    .foot-2 {
+        flex-direction: column;
+    }
+
+    .foot-2-one {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .foot-2 ul {
+        margin: 10px 0px;
+    }
+
+    .social-media {
+        justify-content: center;
+    }
+}
