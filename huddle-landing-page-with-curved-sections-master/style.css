@@ -136,20 +136,26 @@ nav .btn {
 }
 
 .mockups .flex {
-    margin: 40px auto;
+    margin: 50px auto;
     justify-content: space-between;
+}
+
+.mockups h1 {
+    font-size: 50px;
 }
 
 .mockups.container-small {
     width: 500px;
 }
 
-.mockups .flex>div p {
+.mockups .flex>div {
+    margin: 20px 20px;
+    width: 300px;
     text-align: center;
 }
 
-.mockups .flex>div {
-    margin: 20px 20px;
+.mockups .flex>div img {
+    margin-left: -100px;
 }
 
 /* SECTION - MOCKUPS */
