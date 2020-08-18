@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /* Text */
+    --pale-violet_sub-heading-at-the-top-of-the-app-UI: hsl(276, 100%, 81%);
+    --moderate-violet_chat-on-the-left: hsl(276, 55%, 52%);
+    --desaturated-dark-violet_chat-on-the-right: hsl(271, 15%, 43%);
+    --grayish-blue_placeholder-text: hsl(206, 6%, 79%);
+    --very-dark-desaturated-violet_main-heading: hsl(271, 36%, 24%);
+    --dark-grayish-violet_paragraph: hsl(270, 7%, 64%);
+
+    /* Gradients */
+    --light-magenta: hsl(293, 100%, 63%);
+    --light-violet: hsl(264, 100%, 61%);
+
+    /* Secondary */
+    --white: hsl(0, 0%, 100%);
+    --light-grayish-violet_app-background: hsl(270, 20%, 96%);
+    --very-dark-desaturated-violet_submit-button-background: hsl(271, 36%, 24%);
+    --very-light-magenta_radio-button-outline: hsl(289, 100%, 72%);
+}
+
+body {
+    background: var(--light-grayish-violet_app-background);
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+h4 {
+    font-size: 0.9rem;
+}
+
+h5 {
+    color: hsl(0, 50%, 93%);
+    font-size: 0.65rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+h6 {
+    color: hsl(276, 100%, 81%);
+    font-size: 0.45rem;
+    font-weight: 700;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    max-width: 100%;
+    z-index: -1;
+}
+
+.background-top-left {
+    top: 0%;
+    left: 0%;
+    width: 350px;
+    height: 580px;
+    background: linear-gradient(45deg, var(--light-violet), var(--light-magenta));
+    border-radius: 0 0 170px 170px;
+}
+
+.background-bottom-right {
+    bottom: 0;
+    right: -5%;
+    width: 350px;
+    height: 580px;
+    background-color: hsl(270, 7%, 94%);
+    border-radius: 170px 170px 0 0;
+}
+
+.container-hp-text {
+    display: flex;
+    margin: 50px auto;
+    min-height: 80vh;
+}
+
+.container-hp-text>* {
+    flex: 1;
+}
+
+.text {
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+}
+
+.text h1 {
+    color: var(--very-dark-desaturated-violet_main-heading);
+    font-weight: 500;
+}
+
+.text p {
+    margin: 15px 0px;
+    color: hsl(270, 7%, 64%);
+    font-weight: 400;
+    line-height: 1.75;
+    margin-right: 30%;
+}
+
+.hp {
+    display: flex;
+    justify-content: center;
+}
+
+.handphone {
+    margin-left: 200px;
+    background-color: white;
+    max-width: 100%;
+    width: 290px;
+    height: 550px;
+    border-radius: 25px;
+    padding: 10px;
+    text-align: left;
+    box-shadow: 4px 10px 25px -5px var(--dark-grayish-violet_paragraph);
+}
+
+.layer {
+    background-color: var(--light-grayish-violet_app-background);
+    width: auto;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.top {
+    width: 100%;
+    background: linear-gradient(45deg, var(--light-violet), var(--light-magenta));
+    border-radius: 18px 18px 5px 5px;
+    color: hsl(0, 0%, 100%);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info.flex {
+    justify-content: flex-start;
+    padding: 0px 10px;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+ion-icon {
+    color: white;
+}
+
+.chevron {
+    margin-right: 10px;
+}
+
+.three-dots {
+    margin-left: auto;
+}
+
+.top img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.notch {
+    background-color: white;
+    border-radius: 0 0 14px 14px;
+    margin: 0 auto;
+    width: 55%;
+    height: 17px;
+    display: block;
+}
+
+.bottom {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.bottom .flex-column .flex img {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.flex.kiri.flex-column {
+    width: 67%;
+}
+
+.kiri>div {
+    background-color: hsl(300, 2%, 90%);
+    margin: 5px 0px;
+    border-radius: 5px;
+    padding: 7px;
+    margin-right: auto;
+    color: var(--moderate-violet_chat-on-the-left);
+}
+
+.kanan>div {
+    background-color: white;
+    box-shadow: 0 5px 10px -5px hsl(270, 7%, 84%);
+    margin: 5px 0px;
+    border-radius: 5px;
+    padding: 7px;
+    margin-left: auto;
+    color: var(--desaturated-dark-violet_chat-on-the-right);
+}
+
+.kanan>div:nth-child(1) {
+    background-color: transparent;
+    margin: 0;
+    margin-right: 50px;
+    box-shadow: none;
+}
+
+.kanan {
+    width: 60%;
+    margin-left: auto;
+}
+
+.kiri p,
+.kanan p {
+    font-size: 0.49rem;
+    line-height: 1.5;
+}
+
+.gradient>div.flex {
+    justify-content: space-between;
+}
+
+.gradient p {
+    margin-right: auto;
+    margin-left: 10px;
+    font-size: 10px;
+}
+
+.gradient>div {
+    width: 190px;
+    border-radius: 10px 10px 10px 3px;
+    padding: 10px;
+    color: white;
+    background: linear-gradient(to right, var(--light-magenta), var(--light-violet));
+}
+
+.lingkaran {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.input-button {
+    background-color: white;
+    margin: 5px 0px;
+    padding: 7px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    width: 100%;
+}
+
+
+input {
+    border: none;
+    background: none;
+    outline: none;
+    width: 85%;
+}
+
+.button {
+    justify-self: center;
+    background-color: var(--very-dark-desaturated-violet_main-heading);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:900px) {
+    .container-hp-text {
+        flex-direction: column;
+    }
+
+    .handphone {
+        margin: 0 auto;
+    }
+
+    .text {
+        text-align: center;
+        margin: 0 auto;
+        min-height: 50vh;
+    }
+
+    .text p {
+        margin: 20px auto;
+    }
+
+    .background-bottom-right {
+        bottom: -20%;
+        right: -20%;
+        max-height: 80vh;
+    }
+}
