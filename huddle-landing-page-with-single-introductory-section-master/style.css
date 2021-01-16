@@ -59,7 +59,7 @@ header {
     width: 40%;
 }
 
-.col:last-child {
+.col.hero_text {
     margin: 1em 0;
 }
 
@@ -130,11 +130,11 @@ li+li {
         justify-content: space-between;
     }
 
-    .col:first-child {
+    .col.hero__mockup {
         flex: .5;
     }
 
-    .col:last-child {
+    .col.hero_text {
         flex: .45;
     }
 
