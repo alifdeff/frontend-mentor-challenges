@@ -33,10 +33,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    opacity: .75;
-}
-
 li {
     list-style: none;
 }
@@ -71,12 +67,17 @@ footer {
     padding: 1em 0;
 }
 
+
 .btn {
     display: inline-block;
     color: var(-color--soft-magenta);
     background-color: white;
     padding: .5em 3em;
     border-radius: 100px;
+}
+
+.btn:hover {
+    background-color: rgb(216, 216, 216);
 }
 
 footer .row {
@@ -116,10 +117,6 @@ i {
         width: 25%;
     }
 
-    .hero {
-        padding: 0;
-    }
-
     .row {
         display: flex;
         align-items: center;
@@ -139,4 +136,10 @@ i {
         justify-content: flex-end;
         gap: 0px;
     }
+
+    .hero,
+    footer {
+        padding: 0;
+    }
+
 }
