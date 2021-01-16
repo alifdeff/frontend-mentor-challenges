@@ -59,7 +59,7 @@ header {
     width: 40%;
 }
 
-.col.hero_text {
+.hero_text {
     margin: 1em 0;
 }
 
@@ -130,11 +130,11 @@ li+li {
         justify-content: space-between;
     }
 
-    .col.hero__mockup {
+    .hero__mockup {
         flex: .5;
     }
 
-    .col.hero_text {
+    .hero_text {
         flex: .45;
     }
 
