@@ -132,7 +132,6 @@ i {
 
     .hero .container.row {
         justify-content: space-between;
-        background-color: aqua;
     }
 
     .col-60 {
@@ -151,7 +150,4 @@ i {
         display: flex;
         justify-content: flex-end;
     }
-
-
-
 }
